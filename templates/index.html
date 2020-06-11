@@ -2,13 +2,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Prediction credit default</title>
-<link rel="stylesheet" type="text/css" href="view.css" media="all">
-<script type="text/javascript" src="view.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='view.css') }}" media="all">
+<script type="text/javascript" src="{{ url_for('static', filename='view.js') }}"></script>
 
 </head>
 <body id="main_body" >
 	
-	<img id="top" src="top.png" alt="">
+	<img id="top" src="{{ url_for('static', filename='top.png') }}" alt="">
 	<div id="form_container">
 	
 		<h1><a>Prediction credit default</a></h1>
@@ -240,10 +240,12 @@
 			</ul>
 		</form>	
 		<br>
-		<br>
-		{{ prediction_text }}
+		<li id="li_23" >
+			<label class="description" for="output" style="font-size: 250%;">{{ prediction_text }}</label>
+		</li>
+		
 	
 	</div>
-	<img id="bottom" src="bottom.png" alt="">
+	<img id="bottom" src="{{ url_for('static', filename='bottom.png') }}" alt="">
 	</body>
 </html>
