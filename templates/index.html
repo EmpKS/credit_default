@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Prediction credit default</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all">
+<script type="text/javascript" src="view.js"></script>
+
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+	
+		<h1><a>Prediction credit default</a></h1>
+		<form id="form_113899" class="appnitro"  method="post" action="{{ url_for('predict')}}">
+					<div class="form_description">
+			<h2>Prediction credit default</h2>
+		</div>						
+			<ul >
+			
+		<li id="li_1" >
+		<label class="description" for="bill_amt_1">Amount of bill statement in September, $ </label>
+		<div>
+			<input id="bill_amt_1" name="bill_amt_1" class="element text medium" type="text" maxlength="255" value="" required="required"/> 
+		</div> 
+		</li>
+		<li id="li_2" >
+			<label class="description" for="bill_amt_2">Amount of bill statement in August, $ </label>
+			<div>
+				<input id="bill_amt_2" name="bill_amt_2" class="element text medium" type="text" maxlength="255" value="" required="required"/> 
+			</div> 
+		</li>
+		<li id="li_3" >
+			<label class="description" for="bill_amt_3">Amount of bill statement in July, $ </label>
+			<div>
+				<input id="bill_amt_3" name="bill_amt_3" class="element text medium" type="text" maxlength="255" value="" required="required"/> 
+			</div> 
+		</li>		
+		<li id="li_4" >
+			<label class="description" for="bill_amt_4">Amount of bill statement in June, $ </label>
+			<div>
+				<input id="bill_amt_4" name="bill_amt_4" class="element text medium" type="text" maxlength="255" value="" required="required"/> 
+			</div> 
+		</li>
+		<li id="li_5" >
+			<label class="description" for="bill_amt_5">Amount of bill statement in May, $ </label>
+			<div>
+				<input id="bill_amt_5" name="bill_amt_5" class="element text medium" type="text" maxlength="255" value="" required="required"/> 
+			</div> 
+		</li>	
+		<li id="li_6" >
+			<label class="description" for="bill_amt_6">Amount of bill statement in April, $ </label>
+			<div>
+				<input id="bill_amt_6" name="bill_amt_6" class="element text medium" type="text" maxlength="255" value="" required="required"/> 
+			</div> 
+		</li>
+		<li id="li_7" >
+			<label class="description" for="limit_balance">Amount of given credit, $ </label>
+			<div>
+				<input id="limit_balance" name="limit_balance" class="element text medium" type="text" maxlength="255" value="" required="required"/> 
+			</div> 
+		</li>
+		<li id="li_8" >
+			<label class="description" for="degree">Education Level </label>
+			<div>
+			<select class="element select medium" id="degree" name="degree"> 
+				<option value="others" selected="selected">others</option>
+				<option value="university" >university</option>
+				<option value="high school" >high school</option>
+				<option value="graduate school" >graduate school</option>
+	
+			</select>
+			</div> 
+    </li>
+    <li id="li_9" >
+			<label class="description" for="pay_0">Repayment status in September</label>
+			<div>
+			<select class="element select medium" id="pay_0" name="pay_0"> 
+				<option value="0" selected="selected">pay duly</option>
+				<option value="1" >payment delay for 1 month</option>
+				<option value="2" >payment delay for 2 month</option>
+				<option value="3" >payment delay for 3 month</option>
+				<option value="4">payment delay for 4 month</option>
+				<option value="5" >payment delay for 5 month</option>
+				<option value="6" >payment delay for 6 month</option>
+				<option value="7" >payment delay for 7 month and above</option>
+	
+			</select>
+			</div> 
+		</li>
+		<li id="li_10" >
+			<label class="description" for="pay_2">Repayment status in August</label>
+			<div>
+			<select class="element select medium" id="pay_2" name="pay_2"> 
+				<option value="0" selected="selected">pay duly</option>
+				<option value="1" >payment delay for 1 month</option>
+				<option value="2" >payment delay for 2 month</option>
+				<option value="3" >payment delay for 3 month</option>
+				<option value="4">payment delay for 4 month</option>
+				<option value="5" >payment delay for 5 month</option>
+				<option value="6" >payment delay for 6 month</option>
+				<option value="7" >payment delay for 7 month and above</option>
+	
+			</select>
+			</div> 
+		</li>			
+		<li id="li_11" >
+			<label class="description" for="pay_3">Repayment status in July</label>
+			<div>
+			<select class="element select medium" id="pay_3" name="pay_3"> 
+				<option value="0" selected="selected">pay duly</option>
+				<option value="1" >payment delay for 1 month</option>
+				<option value="2" >payment delay for 2 month</option>
+				<option value="3" >payment delay for 3 month</option>
+				<option value="4">payment delay for 4 month</option>
+				<option value="5" >payment delay for 5 month</option>
+				<option value="6" >payment delay for 6 month</option>
+				<option value="7" >payment delay for 7 month and above</option>
+	
+			</select>
+			</div> 
+		</li>			
+		<li id="li_12" >
+			<label class="description" for="pay_4">Repayment status in June</label>
+			<div>
+			<select class="element select medium" id="pay_4" name="pay_4"> 
+				<option value="0" selected="selected">pay duly</option>
+				<option value="1" >payment delay for 1 month</option>
+				<option value="2" >payment delay for 2 month</option>
+				<option value="3" >payment delay for 3 month</option>
+				<option value="4">payment delay for 4 month</option>
+				<option value="5" >payment delay for 5 month</option>
+				<option value="6" >payment delay for 6 month</option>
+				<option value="7" >payment delay for 7 month and above</option>
+	
+			</select>
+			</div> 
+		</li>			
+		<li id="li_13" >
+			<label class="description" for="pay_5">Repayment status in May</label>
+			<div>
+			<select class="element select medium" id="pay_5" name="pay_5"> 
+				<option value="0" selected="selected">pay duly</option>
+				<option value="1" >payment delay for 1 month</option>
+				<option value="2" >payment delay for 2 month</option>
+				<option value="3" >payment delay for 3 month</option>
+				<option value="4">payment delay for 4 month</option>
+				<option value="5" >payment delay for 5 month</option>
+				<option value="6" >payment delay for 6 month</option>
+				<option value="7" >payment delay for 7 month and above</option>
+	
+			</select>
+			</div> 
+		</li>			
+		<li id="li_14" >
+			<label class="description" for="pay_6">Repayment status in April</label>
+			<div>
+			<select class="element select medium" id="pay_6" name="pay_6"> 
+				<option value="0" selected="selected">pay duly</option>
+				<option value="1" >payment delay for 1 month</option>
+				<option value="2" >payment delay for 2 month</option>
+				<option value="3" >payment delay for 3 month</option>
+				<option value="4">payment delay for 4 month</option>
+				<option value="5" >payment delay for 5 month</option>
+				<option value="6" >payment delay for 6 month</option>
+				<option value="7" >payment delay for 7 month and above</option>
+	
+			</select>
+			</div> 
+		</li>						
+		<li id="li_15" >
+			<label class="description" for="pay_amt_1">Amount of previous payment in September, $</label>
+			<div>
+				<input id="pay_amt_1" name="pay_amt_1" class="element text medium" type="text" maxlength="255" value="" required="required"/> 
+			</div> 
+		</li>
+		<li id="li_16" >
+			<label class="description" for="pay_amt_2">Amount of previous payment in August, $ </label>
+			<div>
+				<input id="pay_amt_2" name="pay_amt_2" class="element text medium" type="text" maxlength="255" value="" required="required"/> 
+			</div> 
+		</li>
+		<li id="li_17" >
+			<label class="description" for="pay_amt_3">Amount of previous payment in July, $ </label>
+			<div>
+				<input id="pay_amt_3" name="pay_amt_3" class="element text medium" type="text" maxlength="255" value="" required="required"/> 
+			</div> 
+		</li>		
+		<li id="li_18" >
+			<label class="description" for="pay_amt_4">Amount of previous payment in June, $ </label>
+			<div>
+				<input id="pay_amt_4" name="pay_amt_4" class="element text medium" type="text" maxlength="255" value="" required="required"/> 
+			</div> 
+		</li>
+		<li id="li_19" >
+			<label class="description" for="pay_amt_5">Amount of previous payment in May, $ </label>
+			<div>
+				<input id="pay_amt_5" name="pay_amt_5" class="element text medium" type="text" maxlength="255" value="" required="required"/> 
+			</div> 
+		</li>	
+		<li id="li_20" >
+			<label class="description" for="pay_amt_6">Amount of previous payment in April, $ </label>
+			<div>
+				<input id="pay_amt_6" name="pay_amt_6" class="element text medium" type="text" maxlength="255" value="" required="required"/> 
+			</div> 
+		</li>
+		
+		<li id="li_21" >
+			<label class="description" for="sex">Gender</label>
+			<div>
+			<select class="element select medium" id="sex" name="sex"> 
+				<option value="1" selected="selected">male</option>
+				<option value="2" >female</option>
+			</select>
+			</div> 
+		</li>
+		<li id="li_22" >
+			<label class="description" for="marital_status">Marital status</label>
+			<div>
+			<select class="element select medium" id="marital_status" name="marital_status"> 
+				<option value="1">married</option>
+				<option value="2" >single</option>
+				<option value="3" selected="selected">others</option>
+			</select>
+			</div> 
+		</li>					
+		<li id="li_23" >
+			<label class="description" for="age">Age in years</label>
+			<div>
+				<input id="age" name="age" class="element text medium" type="text" maxlength="255" value="" required="required"/> 
+			</div> 
+		</li>
+		
+			
+		<li class="buttons">
+			    <input type="hidden" name="form_id" value="113899" />
+			    
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Predict default for next month" />
+		</li>
+			</ul>
+		</form>	
+		<br>
+		<br>
+		{{ prediction_text }}
+	
+	</div>
+	<img id="bottom" src="bottom.png" alt="">
+	</body>
+</html>
